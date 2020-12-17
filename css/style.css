@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  cursor: none;
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  position: relative;
+}
+
+main {
+  width: 400px;
+}
+
+main ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+main ul li {
+  z-index: 10;
+}
+
+main ul li i {
+  font-size: 2.5rem;
+  color: white;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+main .cursor {
+  width: 1px;
+  height: 1px;
+  border: 4px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: width 0.2s, height 0.2s;
+  transition: width 0.2s, height 0.2s;
+}
+
+main li:hover ~ .cursor {
+  width: 80px;
+  height: 80px;
+}
+
+main li:hover i {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main li:hover:nth-child(1) i {
+  color: #e1306c;
+}
+
+main li:hover:nth-child(1) ~ .cursor {
+  border-color: #e1306c;
+}
+
+main li:hover:nth-child(5) i {
+  color: #4267b2;
+}
+
+main li:hover:nth-child(5) ~ .cursor {
+  border-color: #4267b2;
+}
+
+main li:hover:nth-child(2) i {
+  color: #1DA1F2;
+}
+
+main li:hover:nth-child(2) ~ .cursor {
+  border-color: #1DA1F2;
+}
+
+main li:hover:nth-child(3) i {
+  color: #FFFC00;
+}
+
+main li:hover:nth-child(3) ~ .cursor {
+  border-color: #FFFC00;
+}
+
+main li:hover:nth-child(4) i {
+  color: #E60023;
+}
+
+main li:hover:nth-child(4) ~ .cursor {
+  border-color: #E60023;
+}
+
+main li:hover:nth-child(6) i {
+  color: #6441A5;
+}
+
+main li:hover:nth-child(6) ~ .cursor {
+  border-color: #6441A5;
+}
+/*# sourceMappingURL=style.css.map */
